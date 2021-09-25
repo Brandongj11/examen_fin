@@ -7,6 +7,7 @@ public class PolizaGeneral {
 	private String codigo;
 	private String valor;
 	private String codigoDescuento;
+	private String numeroSeguro;
 
 	public String getNombre() {
 		return nombre;
@@ -64,6 +65,5 @@ public class PolizaGeneral {
 		this.numeroSeguro = numeroSeguro;
 	}
 
-	private String numeroSeguro;
 
 }

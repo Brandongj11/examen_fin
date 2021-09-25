@@ -4,6 +4,8 @@ import java.util.ArrayList;
 import java.util.List;
 import java.util.Scanner;
 
+import proyecto.fin.Auto;
+
 public class MainAseguradora {
 
 	public static void main(String[] args) {
@@ -45,6 +47,8 @@ public class MainAseguradora {
 		cliente.setAnioVigencia(anio);
 	    cliente.setCodigoDescuento(codigoDescuento);
 		 listPoliza.add(cliente);
+		 PolizaGeneral cliente1 = listPoliza.get(0);
+			System.out.println(cliente1);
 		} else if(poliza.equals("b")) {
 		System.out.println("Ingrese nombre");
 		String nombrevip = teclado.nextLine();
@@ -65,14 +69,18 @@ public class MainAseguradora {
 		clientevip.setAnioVigenciavip(aniovip);
 		clientevip.setBeneficio(beneficio);
 		listPolizaVip.add(clientevip);
+		PolizaVip cliente1 = listPolizaVip.get(0);
+		System.out.println(cliente1);
 				
-			} else if (opcion.equals("2")) {
-				System.out.println("Ingrese el numero de cédula del estudiante a buscar: ");
-			} else if (opcion.equals("3")) {
-				System.out.println("Ingrese el numero de cédula del estudiante a buscar: ");
+		} else if (opcion.equals("2")) {
+				
+		} else if (opcion.equals("3")) {
+		
 		} else if (opcion.equals("4")) {
-			System.out.println("Ingrese el numero de cédula del estudiante a buscar: ");
+		
 		}
-		}while(!opcion.equals("3"));
-	}
+		}while(!opcion.equals("5"));
+		
 }
+	}
+
